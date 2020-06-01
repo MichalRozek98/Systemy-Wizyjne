@@ -29,7 +29,7 @@ namespace SystemyWizyjne
             }
         }
 
-        private string path = @"..\..\..\Images\picture.png";
+        private string path;
 
         public ToneOfImage()
         {
@@ -67,9 +67,8 @@ namespace SystemyWizyjne
 
         private void color_image()
         {
-            Bitmap bitmap = new Bitmap(pictureBox_image.Image);
-            //Bitmap bitmap_help = new Bitmap(Image.FromFile("picture.png"));
-            Bitmap bitmap_help = new Bitmap(Image.FromFile(path));
+            Bitmap bitmap = new Bitmap(pictureBox_help.Image);
+            Bitmap bitmap_help = new Bitmap(pictureBox_help.Image);
 
             for (int i = 0; i < bitmap.Height; i++)
             {
@@ -120,8 +119,7 @@ namespace SystemyWizyjne
 
         private void button_restore_Click(object sender, EventArgs e)
         {
-            //pictureBox_image.Image = Image.FromFile("picture.png");
-            pictureBox_image.Image = Image.FromFile(path);
+            pictureBox_help.Image = pictureBox_help.Image;
             RestoreToDefault();
         }
 
@@ -133,7 +131,7 @@ namespace SystemyWizyjne
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 path = openFileDialog.FileName;
-                pictureBox_image.Image = Image.FromFile(path);
+                pictureBox_help.Image = Image.FromFile(path);
             }
             RestoreToDefault();
         }

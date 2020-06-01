@@ -28,14 +28,13 @@ namespace SystemyWizyjne
             }
         }
 
-        private string path = @"..\..\..\Images\picture.png";
+        private string path;
 
         public BinaryThresHold()
         {
             InitializeComponent();
             button_add_picture.Cursor = Cursors.Hand;
             trackBar_binary.Cursor = Cursors.Hand;
-            pictureBox_original.Image = System.Drawing.Image.FromFile(path);
             pictureBox_binary.Image = null;
             trackBar_binary.Value = 10;
 

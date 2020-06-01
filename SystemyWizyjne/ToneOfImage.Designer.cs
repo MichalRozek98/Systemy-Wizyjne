@@ -48,6 +48,7 @@
             this.trackBar_green = new System.Windows.Forms.TrackBar();
             this.groupBox_picture = new System.Windows.Forms.GroupBox();
             this.pictureBox_image = new System.Windows.Forms.PictureBox();
+            this.pictureBox_help = new System.Windows.Forms.PictureBox();
             this.panel_allegro.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_red)).BeginInit();
@@ -59,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_green)).BeginInit();
             this.groupBox_picture.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_help)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_allegro
@@ -250,6 +252,7 @@
             // 
             // groupBox_picture
             // 
+            this.groupBox_picture.Controls.Add(this.pictureBox_help);
             this.groupBox_picture.Controls.Add(this.pictureBox_image);
             this.groupBox_picture.Location = new System.Drawing.Point(18, 11);
             this.groupBox_picture.Name = "groupBox_picture";
@@ -266,6 +269,17 @@
             this.pictureBox_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_image.TabIndex = 0;
             this.pictureBox_image.TabStop = false;
+            // 
+            // pictureBox_help
+            // 
+            this.pictureBox_help.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_help.Image")));
+            this.pictureBox_help.Location = new System.Drawing.Point(11, 17);
+            this.pictureBox_help.Name = "pictureBox_help";
+            this.pictureBox_help.Size = new System.Drawing.Size(512, 512);
+            this.pictureBox_help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_help.TabIndex = 1;
+            this.pictureBox_help.TabStop = false;
+            this.pictureBox_help.Visible = false;
             // 
             // ToneOfImage
             // 
@@ -288,6 +302,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_green)).EndInit();
             this.groupBox_picture.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_help)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,5 +328,6 @@
         private System.Windows.Forms.TrackBar trackBar_image_green;
         private System.Windows.Forms.Button button_restore;
         private System.Windows.Forms.Button button_change_from_path;
+        private System.Windows.Forms.PictureBox pictureBox_help;
     }
 }

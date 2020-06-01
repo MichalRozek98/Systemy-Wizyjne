@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackWhite));
             this.groupBox_original = new System.Windows.Forms.GroupBox();
             this.pictureBox_original = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -56,6 +57,7 @@
             // 
             // pictureBox_original
             // 
+            this.pictureBox_original.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_original.Image")));
             this.pictureBox_original.Location = new System.Drawing.Point(19, 28);
             this.pictureBox_original.Name = "pictureBox_original";
             this.pictureBox_original.Size = new System.Drawing.Size(400, 400);

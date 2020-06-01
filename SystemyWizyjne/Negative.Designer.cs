@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Negative));
             this.panel_alibaba = new System.Windows.Forms.Panel();
+            this.label_title = new System.Windows.Forms.Label();
             this.button_change_from_path = new System.Windows.Forms.Button();
             this.label_negative = new System.Windows.Forms.Label();
             this.label_original = new System.Windows.Forms.Label();
@@ -37,7 +39,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox_original = new System.Windows.Forms.GroupBox();
             this.pictureBox_original = new System.Windows.Forms.PictureBox();
-            this.label_title = new System.Windows.Forms.Label();
             this.panel_alibaba.SuspendLayout();
             this.groupBox_negative.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_negative)).BeginInit();
@@ -58,6 +59,16 @@
             this.panel_alibaba.Name = "panel_alibaba";
             this.panel_alibaba.Size = new System.Drawing.Size(930, 642);
             this.panel_alibaba.TabIndex = 0;
+            // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_title.Location = new System.Drawing.Point(377, 11);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(165, 27);
+            this.label_title.TabIndex = 15;
+            this.label_title.Text = "Making negative";
             // 
             // button_change_from_path
             // 
@@ -132,22 +143,13 @@
             // 
             // pictureBox_original
             // 
+            this.pictureBox_original.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_original.Image")));
             this.pictureBox_original.Location = new System.Drawing.Point(19, 28);
             this.pictureBox_original.Name = "pictureBox_original";
             this.pictureBox_original.Size = new System.Drawing.Size(400, 400);
             this.pictureBox_original.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_original.TabIndex = 0;
             this.pictureBox_original.TabStop = false;
-            // 
-            // label_title
-            // 
-            this.label_title.AutoSize = true;
-            this.label_title.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_title.Location = new System.Drawing.Point(377, 11);
-            this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(165, 27);
-            this.label_title.TabIndex = 15;
-            this.label_title.Text = "Making negative";
             // 
             // Negative
             // 

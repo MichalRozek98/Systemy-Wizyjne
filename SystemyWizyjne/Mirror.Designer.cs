@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mirror));
             this.panel_ebay = new System.Windows.Forms.Panel();
+            this.label_original = new System.Windows.Forms.Label();
+            this.label_mirror = new System.Windows.Forms.Label();
             this.label_title = new System.Windows.Forms.Label();
             this.button_mirror = new System.Windows.Forms.Button();
             this.button_add_picture = new System.Windows.Forms.Button();
@@ -36,8 +39,6 @@
             this.pictureBox_mirror = new System.Windows.Forms.PictureBox();
             this.groupBox_original = new System.Windows.Forms.GroupBox();
             this.pictureBox_original = new System.Windows.Forms.PictureBox();
-            this.label_mirror = new System.Windows.Forms.Label();
-            this.label_original = new System.Windows.Forms.Label();
             this.panel_ebay.SuspendLayout();
             this.groupBox_mirror.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_mirror)).BeginInit();
@@ -59,6 +60,26 @@
             this.panel_ebay.Name = "panel_ebay";
             this.panel_ebay.Size = new System.Drawing.Size(930, 642);
             this.panel_ebay.TabIndex = 0;
+            // 
+            // label_original
+            // 
+            this.label_original.AutoSize = true;
+            this.label_original.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_original.Location = new System.Drawing.Point(93, 474);
+            this.label_original.Name = "label_original";
+            this.label_original.Size = new System.Drawing.Size(134, 40);
+            this.label_original.TabIndex = 17;
+            this.label_original.Text = "Original";
+            // 
+            // label_mirror
+            // 
+            this.label_mirror.AutoSize = true;
+            this.label_mirror.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mirror.Location = new System.Drawing.Point(558, 474);
+            this.label_mirror.Name = "label_mirror";
+            this.label_mirror.Size = new System.Drawing.Size(114, 40);
+            this.label_mirror.TabIndex = 16;
+            this.label_mirror.Text = "Mirror";
             // 
             // label_title
             // 
@@ -129,32 +150,13 @@
             // 
             // pictureBox_original
             // 
+            this.pictureBox_original.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_original.Image")));
             this.pictureBox_original.Location = new System.Drawing.Point(23, 26);
             this.pictureBox_original.Name = "pictureBox_original";
             this.pictureBox_original.Size = new System.Drawing.Size(256, 256);
             this.pictureBox_original.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_original.TabIndex = 0;
             this.pictureBox_original.TabStop = false;
-            // 
-            // label_mirror
-            // 
-            this.label_mirror.AutoSize = true;
-            this.label_mirror.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_mirror.Location = new System.Drawing.Point(558, 474);
-            this.label_mirror.Name = "label_mirror";
-            this.label_mirror.Size = new System.Drawing.Size(114, 40);
-            this.label_mirror.TabIndex = 16;
-            this.label_mirror.Text = "Mirror";
-            // 
-            // label_original
-            // 
-            this.label_original.AutoSize = true;
-            this.label_original.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_original.Location = new System.Drawing.Point(93, 474);
-            this.label_original.Name = "label_original";
-            this.label_original.Size = new System.Drawing.Size(134, 40);
-            this.label_original.TabIndex = 17;
-            this.label_original.Text = "Original";
             // 
             // Mirror
             // 

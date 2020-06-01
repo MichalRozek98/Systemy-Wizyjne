@@ -25,7 +25,7 @@ namespace SystemyWizyjne
             }
         }
 
-        private string path = @"..\..\..\Images\picture.png";
+        private string path;
 
         public BlackWhite()
         {
@@ -36,8 +36,7 @@ namespace SystemyWizyjne
 
         private void Grayscale()
         {
-            Bitmap bitmap = new Bitmap(path);
-            pictureBox_original.Image = Image.FromFile(path);
+            Bitmap bitmap = new Bitmap(pictureBox_original.Image);
 
             int width = bitmap.Width;
             int height = bitmap.Height;

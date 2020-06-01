@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BinaryThresHold));
             this.button_add_picture = new System.Windows.Forms.Button();
             this.groupBox_original = new System.Windows.Forms.GroupBox();
             this.pictureBox_original = new System.Windows.Forms.PictureBox();
@@ -70,6 +71,7 @@
             // 
             // pictureBox_original
             // 
+            this.pictureBox_original.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_original.Image")));
             this.pictureBox_original.Location = new System.Drawing.Point(23, 26);
             this.pictureBox_original.Name = "pictureBox_original";
             this.pictureBox_original.Size = new System.Drawing.Size(256, 256);

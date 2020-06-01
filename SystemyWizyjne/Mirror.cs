@@ -25,16 +25,13 @@ namespace SystemyWizyjne
             }
         }
 
-        private string path = @"..\..\..\Images\picture.png";
+        private string path;
 
         public Mirror()
         {
             InitializeComponent();
             button_add_picture.Cursor = Cursors.Hand;
             button_mirror.Cursor = Cursors.Hand;
-
-            pictureBox_original.Image = Image.FromFile(path);
-            pictureBox_mirror.Image = null;
 
             int width = pictureBox_original.Image.Width;
             int height = pictureBox_original.Image.Height;
