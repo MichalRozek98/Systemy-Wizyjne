@@ -1,6 +1,6 @@
 ﻿namespace AukcjeApp
 {
-    partial class Deep
+    partial class Negative
     {
         /// <summary> 
         /// Required designer variable.

@@ -30,15 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToneOfImage));
             this.panel_allegro = new System.Windows.Forms.Panel();
-            this.trackBar_red = new System.Windows.Forms.TrackBar();
-            this.trackBar_green = new System.Windows.Forms.TrackBar();
-            this.trackBar_blue = new System.Windows.Forms.TrackBar();
-            this.groupBox_picture = new System.Windows.Forms.GroupBox();
-            this.pictureBox_image = new System.Windows.Forms.PictureBox();
-            this.label_red = new System.Windows.Forms.Label();
-            this.label_green = new System.Windows.Forms.Label();
-            this.label_blue = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button_change_from_path = new System.Windows.Forms.Button();
+            this.button_restore = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.trackBar_image_red = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,20 +39,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.trackBar_image_blue = new System.Windows.Forms.TrackBar();
             this.trackBar_image_green = new System.Windows.Forms.TrackBar();
-            this.button_restore = new System.Windows.Forms.Button();
-            this.button_change_from_path = new System.Windows.Forms.Button();
-            this.FileDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.trackBar_red = new System.Windows.Forms.TrackBar();
+            this.label_blue = new System.Windows.Forms.Label();
+            this.label_red = new System.Windows.Forms.Label();
+            this.label_green = new System.Windows.Forms.Label();
+            this.trackBar_blue = new System.Windows.Forms.TrackBar();
+            this.trackBar_green = new System.Windows.Forms.TrackBar();
+            this.groupBox_picture = new System.Windows.Forms.GroupBox();
+            this.pictureBox_image = new System.Windows.Forms.PictureBox();
             this.panel_allegro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_red)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_blue)).BeginInit();
-            this.groupBox_picture.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_red)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_blue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_green)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_red)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_blue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_green)).BeginInit();
+            this.groupBox_picture.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_allegro
@@ -75,96 +74,33 @@
             this.panel_allegro.Size = new System.Drawing.Size(930, 642);
             this.panel_allegro.TabIndex = 0;
             // 
-            // trackBar_red
+            // button_change_from_path
             // 
-            this.trackBar_red.Location = new System.Drawing.Point(5, 49);
-            this.trackBar_red.Maximum = 255;
-            this.trackBar_red.Name = "trackBar_red";
-            this.trackBar_red.Size = new System.Drawing.Size(347, 45);
-            this.trackBar_red.TabIndex = 1;
-            this.trackBar_red.Value = 255;
-            this.trackBar_red.Scroll += new System.EventHandler(this.trackBar_red_Scroll);
+            this.button_change_from_path.BackColor = System.Drawing.Color.DarkGray;
+            this.button_change_from_path.FlatAppearance.BorderSize = 0;
+            this.button_change_from_path.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_change_from_path.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_change_from_path.Location = new System.Drawing.Point(366, 557);
+            this.button_change_from_path.Name = "button_change_from_path";
+            this.button_change_from_path.Size = new System.Drawing.Size(175, 69);
+            this.button_change_from_path.TabIndex = 7;
+            this.button_change_from_path.Text = "Change picture";
+            this.button_change_from_path.UseVisualStyleBackColor = false;
+            this.button_change_from_path.Click += new System.EventHandler(this.button_change_from_path_Click);
             // 
-            // trackBar_green
+            // button_restore
             // 
-            this.trackBar_green.Location = new System.Drawing.Point(5, 130);
-            this.trackBar_green.Maximum = 255;
-            this.trackBar_green.Name = "trackBar_green";
-            this.trackBar_green.Size = new System.Drawing.Size(347, 45);
-            this.trackBar_green.TabIndex = 2;
-            this.trackBar_green.Value = 255;
-            this.trackBar_green.Scroll += new System.EventHandler(this.trackBar_green_Scroll);
-            // 
-            // trackBar_blue
-            // 
-            this.trackBar_blue.Location = new System.Drawing.Point(8, 217);
-            this.trackBar_blue.Maximum = 255;
-            this.trackBar_blue.Name = "trackBar_blue";
-            this.trackBar_blue.Size = new System.Drawing.Size(347, 45);
-            this.trackBar_blue.TabIndex = 3;
-            this.trackBar_blue.Value = 255;
-            this.trackBar_blue.Scroll += new System.EventHandler(this.trackBar_blue_Scroll);
-            // 
-            // groupBox_picture
-            // 
-            this.groupBox_picture.Controls.Add(this.pictureBox_image);
-            this.groupBox_picture.Location = new System.Drawing.Point(18, 11);
-            this.groupBox_picture.Name = "groupBox_picture";
-            this.groupBox_picture.Size = new System.Drawing.Size(540, 540);
-            this.groupBox_picture.TabIndex = 4;
-            this.groupBox_picture.TabStop = false;
-            // 
-            // pictureBox_image
-            // 
-            this.pictureBox_image.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_image.Image")));
-            this.pictureBox_image.Location = new System.Drawing.Point(11, 17);
-            this.pictureBox_image.Name = "pictureBox_image";
-            this.pictureBox_image.Size = new System.Drawing.Size(512, 512);
-            this.pictureBox_image.TabIndex = 0;
-            this.pictureBox_image.TabStop = false;
-            // 
-            // label_red
-            // 
-            this.label_red.AutoSize = true;
-            this.label_red.Location = new System.Drawing.Point(6, 19);
-            this.label_red.Name = "label_red";
-            this.label_red.Size = new System.Drawing.Size(37, 18);
-            this.label_red.TabIndex = 5;
-            this.label_red.Text = "Red";
-            // 
-            // label_green
-            // 
-            this.label_green.AutoSize = true;
-            this.label_green.Location = new System.Drawing.Point(6, 103);
-            this.label_green.Name = "label_green";
-            this.label_green.Size = new System.Drawing.Size(53, 18);
-            this.label_green.TabIndex = 6;
-            this.label_green.Text = "Green";
-            // 
-            // label_blue
-            // 
-            this.label_blue.AutoSize = true;
-            this.label_blue.Location = new System.Drawing.Point(9, 190);
-            this.label_blue.Name = "label_blue";
-            this.label_blue.Size = new System.Drawing.Size(42, 18);
-            this.label_blue.TabIndex = 7;
-            this.label_blue.Text = "Blue";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.trackBar_red);
-            this.groupBox1.Controls.Add(this.label_blue);
-            this.groupBox1.Controls.Add(this.label_red);
-            this.groupBox1.Controls.Add(this.label_green);
-            this.groupBox1.Controls.Add(this.trackBar_blue);
-            this.groupBox1.Controls.Add(this.trackBar_green);
-            this.groupBox1.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(564, 19);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(352, 268);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Change the background";
+            this.button_restore.BackColor = System.Drawing.Color.DarkGray;
+            this.button_restore.FlatAppearance.BorderSize = 0;
+            this.button_restore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_restore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_restore.Location = new System.Drawing.Point(29, 557);
+            this.button_restore.Name = "button_restore";
+            this.button_restore.Size = new System.Drawing.Size(175, 69);
+            this.button_restore.TabIndex = 6;
+            this.button_restore.Text = "Restore original picture";
+            this.button_restore.UseVisualStyleBackColor = false;
+            this.button_restore.Click += new System.EventHandler(this.button_restore_Click);
             // 
             // groupBox2
             // 
@@ -190,7 +126,7 @@
             this.trackBar_image_red.Size = new System.Drawing.Size(347, 45);
             this.trackBar_image_red.TabIndex = 1;
             this.trackBar_image_red.Value = 255;
-            this.trackBar_image_red.Scroll += new System.EventHandler(this.trackBar_image_red_Scroll);
+            this.trackBar_image_red.MouseCaptureChanged += new System.EventHandler(this.trackBar_image_red_MouseCaptureChanged);
             // 
             // label1
             // 
@@ -227,7 +163,7 @@
             this.trackBar_image_blue.Size = new System.Drawing.Size(347, 45);
             this.trackBar_image_blue.TabIndex = 3;
             this.trackBar_image_blue.Value = 255;
-            this.trackBar_image_blue.Scroll += new System.EventHandler(this.trackBar_image_blue_Scroll);
+            this.trackBar_image_blue.MouseCaptureChanged += new System.EventHandler(this.trackBar_image_blue_MouseCaptureChanged);
             // 
             // trackBar_image_green
             // 
@@ -237,35 +173,99 @@
             this.trackBar_image_green.Size = new System.Drawing.Size(347, 45);
             this.trackBar_image_green.TabIndex = 2;
             this.trackBar_image_green.Value = 255;
-            this.trackBar_image_green.Scroll += new System.EventHandler(this.trackBar_image_green_Scroll);
+            this.trackBar_image_green.MouseCaptureChanged += new System.EventHandler(this.trackBar_image_green_MouseCaptureChanged);
             // 
-            // button_restore
+            // groupBox1
             // 
-            this.button_restore.BackColor = System.Drawing.Color.DarkGray;
-            this.button_restore.FlatAppearance.BorderSize = 0;
-            this.button_restore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_restore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_restore.Location = new System.Drawing.Point(29, 557);
-            this.button_restore.Name = "button_restore";
-            this.button_restore.Size = new System.Drawing.Size(175, 69);
-            this.button_restore.TabIndex = 6;
-            this.button_restore.Text = "Restore original picture";
-            this.button_restore.UseVisualStyleBackColor = false;
-            this.button_restore.Click += new System.EventHandler(this.button1_Click);
+            this.groupBox1.Controls.Add(this.trackBar_red);
+            this.groupBox1.Controls.Add(this.label_blue);
+            this.groupBox1.Controls.Add(this.label_red);
+            this.groupBox1.Controls.Add(this.label_green);
+            this.groupBox1.Controls.Add(this.trackBar_blue);
+            this.groupBox1.Controls.Add(this.trackBar_green);
+            this.groupBox1.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(564, 19);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(352, 268);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Change the background";
             // 
-            // button_change_from_path
+            // trackBar_red
             // 
-            this.button_change_from_path.BackColor = System.Drawing.Color.DarkGray;
-            this.button_change_from_path.FlatAppearance.BorderSize = 0;
-            this.button_change_from_path.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_change_from_path.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_change_from_path.Location = new System.Drawing.Point(366, 557);
-            this.button_change_from_path.Name = "button_change_from_path";
-            this.button_change_from_path.Size = new System.Drawing.Size(175, 69);
-            this.button_change_from_path.TabIndex = 7;
-            this.button_change_from_path.Text = "Change picture";
-            this.button_change_from_path.UseVisualStyleBackColor = false;
-            this.button_change_from_path.Click += new System.EventHandler(this.button_change_from_path_Click);
+            this.trackBar_red.Location = new System.Drawing.Point(5, 49);
+            this.trackBar_red.Maximum = 255;
+            this.trackBar_red.Name = "trackBar_red";
+            this.trackBar_red.Size = new System.Drawing.Size(347, 45);
+            this.trackBar_red.TabIndex = 1;
+            this.trackBar_red.Value = 255;
+            this.trackBar_red.Scroll += new System.EventHandler(this.trackBar_red_Scroll);
+            // 
+            // label_blue
+            // 
+            this.label_blue.AutoSize = true;
+            this.label_blue.Location = new System.Drawing.Point(9, 190);
+            this.label_blue.Name = "label_blue";
+            this.label_blue.Size = new System.Drawing.Size(42, 18);
+            this.label_blue.TabIndex = 7;
+            this.label_blue.Text = "Blue";
+            // 
+            // label_red
+            // 
+            this.label_red.AutoSize = true;
+            this.label_red.Location = new System.Drawing.Point(6, 19);
+            this.label_red.Name = "label_red";
+            this.label_red.Size = new System.Drawing.Size(37, 18);
+            this.label_red.TabIndex = 5;
+            this.label_red.Text = "Red";
+            // 
+            // label_green
+            // 
+            this.label_green.AutoSize = true;
+            this.label_green.Location = new System.Drawing.Point(6, 103);
+            this.label_green.Name = "label_green";
+            this.label_green.Size = new System.Drawing.Size(53, 18);
+            this.label_green.TabIndex = 6;
+            this.label_green.Text = "Green";
+            // 
+            // trackBar_blue
+            // 
+            this.trackBar_blue.Location = new System.Drawing.Point(8, 217);
+            this.trackBar_blue.Maximum = 255;
+            this.trackBar_blue.Name = "trackBar_blue";
+            this.trackBar_blue.Size = new System.Drawing.Size(347, 45);
+            this.trackBar_blue.TabIndex = 3;
+            this.trackBar_blue.Value = 255;
+            this.trackBar_blue.Scroll += new System.EventHandler(this.trackBar_blue_Scroll);
+            // 
+            // trackBar_green
+            // 
+            this.trackBar_green.Location = new System.Drawing.Point(5, 130);
+            this.trackBar_green.Maximum = 255;
+            this.trackBar_green.Name = "trackBar_green";
+            this.trackBar_green.Size = new System.Drawing.Size(347, 45);
+            this.trackBar_green.TabIndex = 2;
+            this.trackBar_green.Value = 255;
+            this.trackBar_green.Scroll += new System.EventHandler(this.trackBar_green_Scroll);
+            // 
+            // groupBox_picture
+            // 
+            this.groupBox_picture.Controls.Add(this.pictureBox_image);
+            this.groupBox_picture.Location = new System.Drawing.Point(18, 11);
+            this.groupBox_picture.Name = "groupBox_picture";
+            this.groupBox_picture.Size = new System.Drawing.Size(540, 540);
+            this.groupBox_picture.TabIndex = 4;
+            this.groupBox_picture.TabStop = false;
+            // 
+            // pictureBox_image
+            // 
+            this.pictureBox_image.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_image.Image")));
+            this.pictureBox_image.Location = new System.Drawing.Point(11, 17);
+            this.pictureBox_image.Name = "pictureBox_image";
+            this.pictureBox_image.Size = new System.Drawing.Size(512, 512);
+            this.pictureBox_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_image.TabIndex = 0;
+            this.pictureBox_image.TabStop = false;
             // 
             // ToneOfImage
             // 
@@ -276,18 +276,18 @@
             this.Name = "ToneOfImage";
             this.Size = new System.Drawing.Size(930, 642);
             this.panel_allegro.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_red)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar_blue)).EndInit();
-            this.groupBox_picture.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_blue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_image_green)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_red)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_blue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_green)).EndInit();
+            this.groupBox_picture.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,6 +313,5 @@
         private System.Windows.Forms.TrackBar trackBar_image_green;
         private System.Windows.Forms.Button button_restore;
         private System.Windows.Forms.Button button_change_from_path;
-        private System.Windows.Forms.FolderBrowserDialog FileDialog;
     }
 }

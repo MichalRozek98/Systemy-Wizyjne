@@ -91,22 +91,22 @@ namespace AukcjeApp
             pictureBox_image.Image = bitmap;
         }
 
-        private void trackBar_image_red_Scroll(object sender, EventArgs e)
+        private void trackBar_image_red_MouseCaptureChanged(object sender, EventArgs e)
         {
             color_image();
         }
 
-        private void trackBar_image_green_Scroll(object sender, EventArgs e)
+        private void trackBar_image_green_MouseCaptureChanged(object sender, EventArgs e)
         {
             color_image();
         }
 
-        private void trackBar_image_blue_Scroll(object sender, EventArgs e)
+        private void trackBar_image_blue_MouseCaptureChanged(object sender, EventArgs e)
         {
             color_image();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_restore_Click(object sender, EventArgs e)
         {
             //pictureBox_image.Image = Image.FromFile("picture.png");
             pictureBox_image.Image = Image.FromFile(path);
@@ -118,7 +118,7 @@ namespace AukcjeApp
         private void button_change_from_path_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Bitmaps|*.bmp|jpages|*.jpg|PNG|*.png";
+            openFileDialog.Filter = "PNG|*.png|Bitmaps|*.bmp|jpages|*.jpg";
 
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -126,5 +126,7 @@ namespace AukcjeApp
                 pictureBox_image.Image = Image.FromFile(path);
             }
         }
+
+        
     }
 }

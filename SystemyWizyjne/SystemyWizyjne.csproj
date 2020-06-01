@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Deep.cs">
+    <Compile Include="Negative.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Deep.Designer.cs">
-      <DependentUpon>Deep.cs</DependentUpon>
+    <Compile Include="Negative.Designer.cs">
+      <DependentUpon>Negative.cs</DependentUpon>
     </Compile>
     <Compile Include="BlackWhite.cs">
       <SubType>UserControl</SubType>
@@ -88,8 +88,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Deep.resx">
-      <DependentUpon>Deep.cs</DependentUpon>
+    <EmbeddedResource Include="Negative.resx">
+      <DependentUpon>Negative.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BlackWhite.resx">
       <DependentUpon>BlackWhite.cs</DependentUpon>

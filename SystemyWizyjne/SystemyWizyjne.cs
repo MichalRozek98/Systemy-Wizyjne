@@ -96,16 +96,16 @@ namespace AukcjeApp
             }
             else if (User_control_flag == 3)
             {
-                var Deep_user = new Deep();
-                if (!panel_main.Contains(Deep_user.Instance))
+                var Negativ_user = new Negative();
+                if (!panel_main.Contains(Negativ_user.Instance))
                 {
-                    panel_main.Controls.Add(Deep_user.Instance);
-                    Deep_user.Instance.Dock = DockStyle.Fill;
-                    Deep_user.Instance.BringToFront();
+                    panel_main.Controls.Add(Negativ_user.Instance);
+                    Negativ_user.Instance.Dock = DockStyle.Fill;
+                    Negativ_user.Instance.BringToFront();
                 }
                 else
                 {
-                    Deep_user.Instance.BringToFront();
+                    Negativ_user.Instance.BringToFront();
                 }
                 /*button_home.Visible = true;
                 button_sign_up.Visible = false;
@@ -148,7 +148,7 @@ namespace AukcjeApp
             Changing_window();
         }
 
-        private void button_deep_Click(object sender, EventArgs e)
+        private void button_negative_Click(object sender, EventArgs e)
         {
             User_control_flag = 3;
             Changing_window();
@@ -171,7 +171,7 @@ namespace AukcjeApp
             button_mirror.Cursor = Cursors.Hand;
             button_tone.Cursor = Cursors.Hand;
             button_black_white.Cursor = Cursors.Hand;
-            button_deep.Cursor = Cursors.Hand;
+            button_negative.Cursor = Cursors.Hand;
             Changing_window();
         }
 

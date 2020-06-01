@@ -34,7 +34,7 @@
             this.button_close_app = new System.Windows.Forms.Button();
             this.pictureBox_logo_icon = new System.Windows.Forms.PictureBox();
             this.panel_menu_left = new System.Windows.Forms.Panel();
-            this.button_deep = new System.Windows.Forms.Button();
+            this.button_negative = new System.Windows.Forms.Button();
             this.button_mirror = new System.Windows.Forms.Button();
             this.button_black_white = new System.Windows.Forms.Button();
             this.button_tone = new System.Windows.Forms.Button();
@@ -100,7 +100,7 @@
             // 
             // panel_menu_left
             // 
-            this.panel_menu_left.Controls.Add(this.button_deep);
+            this.panel_menu_left.Controls.Add(this.button_negative);
             this.panel_menu_left.Controls.Add(this.button_mirror);
             this.panel_menu_left.Controls.Add(this.button_black_white);
             this.panel_menu_left.Controls.Add(this.button_tone);
@@ -111,19 +111,20 @@
             this.panel_menu_left.TabIndex = 1;
             this.panel_menu_left.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_menu_left_Paint);
             // 
-            // button_deep
+            // button_negative
             // 
-            this.button_deep.BackColor = System.Drawing.Color.Transparent;
-            this.button_deep.FlatAppearance.BorderSize = 0;
-            this.button_deep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.button_deep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button_deep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_deep.Location = new System.Drawing.Point(38, 469);
-            this.button_deep.Name = "button_deep";
-            this.button_deep.Size = new System.Drawing.Size(64, 64);
-            this.button_deep.TabIndex = 8;
-            this.button_deep.UseVisualStyleBackColor = false;
-            this.button_deep.Click += new System.EventHandler(this.button_deep_Click);
+            this.button_negative.BackColor = System.Drawing.Color.Transparent;
+            this.button_negative.FlatAppearance.BorderSize = 0;
+            this.button_negative.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.button_negative.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button_negative.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_negative.Image = ((System.Drawing.Image)(resources.GetObject("button_negative.Image")));
+            this.button_negative.Location = new System.Drawing.Point(38, 469);
+            this.button_negative.Name = "button_negative";
+            this.button_negative.Size = new System.Drawing.Size(64, 64);
+            this.button_negative.TabIndex = 8;
+            this.button_negative.UseVisualStyleBackColor = false;
+            this.button_negative.Click += new System.EventHandler(this.button_negative_Click);
             // 
             // button_mirror
             // 
@@ -132,6 +133,7 @@
             this.button_mirror.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.button_mirror.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_mirror.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_mirror.Image = ((System.Drawing.Image)(resources.GetObject("button_mirror.Image")));
             this.button_mirror.Location = new System.Drawing.Point(38, 355);
             this.button_mirror.Name = "button_mirror";
             this.button_mirror.Size = new System.Drawing.Size(64, 64);
@@ -220,7 +222,7 @@
         private System.Windows.Forms.Button button_close_app;
         private System.Windows.Forms.Panel panel_main;
         private System.Windows.Forms.Button button_minimize;
-        private System.Windows.Forms.Button button_deep;
+        private System.Windows.Forms.Button button_negative;
         private System.Windows.Forms.Button button_mirror;
         private System.Windows.Forms.Button button_black_white;
         private System.Windows.Forms.Button button_tone;

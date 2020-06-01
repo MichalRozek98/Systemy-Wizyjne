@@ -11,21 +11,21 @@ using System.Drawing.Drawing2D;
 
 namespace AukcjeApp
 {
-    public partial class Deep : UserControl
+    public partial class Negative : UserControl
     {
-        private Deep _instance;
+        private Negative _instance;
 
-        public Deep Instance
+        public Negative Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new Deep();
+                    _instance = new Negative();
                 return _instance;
             }
         }
 
-        public Deep()
+        public Negative()
         {
             InitializeComponent();
         }
