@@ -12,7 +12,7 @@ using System.Net.Http;
 using System.IO;
 using System.Net;
 
-namespace AukcjeApp
+namespace SystemyWizyjne
 {
     public partial class ToneOfImage : UserControl
     {

@@ -1,4 +1,4 @@
-﻿namespace AukcjeApp
+﻿namespace SystemyWizyjne
 {
     partial class ToneOfImage
     {

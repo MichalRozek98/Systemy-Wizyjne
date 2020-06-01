@@ -11,27 +11,23 @@ using System.Drawing.Drawing2D;
 
 namespace SystemyWizyjne
 {
-    public partial class Negative : UserControl
+    public partial class Sepia : UserControl
     {
-        private Negative _instance;
+        private Sepia _instance;
 
-        public Negative Instance
+        public Sepia Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new Negative();
+                    _instance = new Sepia();
                 return _instance;
             }
         }
 
-        public Negative()
+        public Sepia()
         {
             InitializeComponent();
-        }
-
-        private void panel_alibaba_Paint(object sender, PaintEventArgs e)
-        {
         }
     }
 }

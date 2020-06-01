@@ -1,6 +1,6 @@
 ﻿namespace SystemyWizyjne
 {
-    partial class Negative
+    partial class Sepia
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,30 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel_alibaba = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel_alibaba
-            // 
-            this.panel_alibaba.Location = new System.Drawing.Point(0, 0);
-            this.panel_alibaba.Name = "panel_alibaba";
-            this.panel_alibaba.Size = new System.Drawing.Size(930, 642);
-            this.panel_alibaba.TabIndex = 0;
-            // 
-            // Deep
+            // Sepia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Controls.Add(this.panel_alibaba);
-            this.Name = "Deep";
+            this.Name = "Sepia";
             this.Size = new System.Drawing.Size(930, 642);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel_alibaba;
     }
 }

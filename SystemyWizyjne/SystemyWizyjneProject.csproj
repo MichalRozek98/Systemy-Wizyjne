@@ -62,17 +62,24 @@
     <Compile Include="BlackWhite.Designer.cs">
       <DependentUpon>BlackWhite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sepia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sepia.Designer.cs">
+      <DependentUpon>Sepia.cs</DependentUpon>
+    </Compile>
     <Compile Include="ToneOfImage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ToneOfImage.Designer.cs">
       <DependentUpon>ToneOfImage.cs</DependentUpon>
     </Compile>
-    <Compile Include="SystemyWizyjne.cs">
+    <Compile Include="VisionSystems.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SystemyWizyjne.Designer.cs">
-      <DependentUpon>SystemyWizyjne.cs</DependentUpon>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>VisionSystems.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="SystemsMainView.cs">
       <SubType>UserControl</SubType>
@@ -94,11 +101,14 @@
     <EmbeddedResource Include="BlackWhite.resx">
       <DependentUpon>BlackWhite.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sepia.resx">
+      <DependentUpon>Sepia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ToneOfImage.resx">
       <DependentUpon>ToneOfImage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SystemyWizyjne.resx">
-      <DependentUpon>SystemyWizyjne.cs</DependentUpon>
+    <EmbeddedResource Include="VisionSystems.resx">
+      <DependentUpon>VisionSystems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SystemsMainView.resx">
       <DependentUpon>SystemsMainView.cs</DependentUpon>

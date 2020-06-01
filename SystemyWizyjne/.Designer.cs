@@ -1,6 +1,6 @@
-﻿namespace AukcjeApp
+﻿namespace SystemyWizyjne
 {
-    partial class SystemyWizyjne
+    partial class VisionSystems
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SystemyWizyjne));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisionSystems));
             this.panel_menu_up = new System.Windows.Forms.Panel();
             this.button_minimize = new System.Windows.Forms.Button();
             this.button_close_app = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.button_tone = new System.Windows.Forms.Button();
             this.button_main = new System.Windows.Forms.Button();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.buttons_sepia = new System.Windows.Forms.Button();
             this.panel_menu_up.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_icon)).BeginInit();
             this.panel_menu_left.SuspendLayout();
@@ -100,6 +101,7 @@
             // 
             // panel_menu_left
             // 
+            this.panel_menu_left.Controls.Add(this.buttons_sepia);
             this.panel_menu_left.Controls.Add(this.button_negative);
             this.panel_menu_left.Controls.Add(this.button_mirror);
             this.panel_menu_left.Controls.Add(this.button_black_white);
@@ -119,7 +121,7 @@
             this.button_negative.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_negative.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_negative.Image = ((System.Drawing.Image)(resources.GetObject("button_negative.Image")));
-            this.button_negative.Location = new System.Drawing.Point(38, 469);
+            this.button_negative.Location = new System.Drawing.Point(38, 452);
             this.button_negative.Name = "button_negative";
             this.button_negative.Size = new System.Drawing.Size(64, 64);
             this.button_negative.TabIndex = 8;
@@ -134,7 +136,7 @@
             this.button_mirror.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_mirror.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_mirror.Image = ((System.Drawing.Image)(resources.GetObject("button_mirror.Image")));
-            this.button_mirror.Location = new System.Drawing.Point(38, 355);
+            this.button_mirror.Location = new System.Drawing.Point(38, 344);
             this.button_mirror.Name = "button_mirror";
             this.button_mirror.Size = new System.Drawing.Size(64, 64);
             this.button_mirror.TabIndex = 7;
@@ -194,6 +196,21 @@
             this.panel_main.Size = new System.Drawing.Size(930, 642);
             this.panel_main.TabIndex = 2;
             // 
+            // buttons_sepia
+            // 
+            this.buttons_sepia.BackColor = System.Drawing.Color.Transparent;
+            this.buttons_sepia.FlatAppearance.BorderSize = 0;
+            this.buttons_sepia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.buttons_sepia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttons_sepia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttons_sepia.Image = ((System.Drawing.Image)(resources.GetObject("buttons_sepia.Image")));
+            this.buttons_sepia.Location = new System.Drawing.Point(39, 556);
+            this.buttons_sepia.Name = "buttons_sepia";
+            this.buttons_sepia.Size = new System.Drawing.Size(64, 64);
+            this.buttons_sepia.TabIndex = 9;
+            this.buttons_sepia.UseVisualStyleBackColor = false;
+            this.buttons_sepia.Click += new System.EventHandler(this.buttons_sepia_Click);
+            // 
             // SystemyWizyjne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +245,7 @@
         private System.Windows.Forms.Button button_black_white;
         private System.Windows.Forms.Button button_tone;
         private System.Windows.Forms.Button button_main;
+        private System.Windows.Forms.Button buttons_sepia;
     }
 }
 

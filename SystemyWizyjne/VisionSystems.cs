@@ -10,9 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AukcjeApp
+namespace SystemyWizyjne
 {
-    public partial class SystemyWizyjne : Form
+    public partial class VisionSystems : Form
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -43,7 +43,6 @@ namespace AukcjeApp
             if (User_control_flag == 0)
             {
                 var Systems_main = new SystemsMainView();
-
 
                 if (!panel_main.Contains(Systems_main.Instance))
                 {
@@ -128,6 +127,20 @@ namespace AukcjeApp
                 button_sign_up.Visible = false;
                 button_sig_in.Visible = false;*/
             }
+            else if (User_control_flag == 5)
+            {
+                var Sepia_user = new Sepia();
+                if (!panel_main.Contains(Sepia_user.Instance))
+                {
+                    panel_main.Controls.Add(Sepia_user.Instance);
+                    Sepia_user.Instance.Dock = DockStyle.Fill;
+                    Sepia_user.Instance.BringToFront();
+                }
+                else
+                {
+                    Sepia_user.Instance.BringToFront();
+                }
+            }
         }
 
         private void button_main_Click(object sender, EventArgs e)
@@ -160,8 +173,14 @@ namespace AukcjeApp
             Changing_window();
         }
 
+        private void buttons_sepia_Click(object sender, EventArgs e)
+        {
+            User_control_flag = 5;
+            Changing_window();
+        }
 
-        public SystemyWizyjne()
+
+        public VisionSystems()
         {
             InitializeComponent();
             panel_menu_up.Refresh();
@@ -172,6 +191,7 @@ namespace AukcjeApp
             button_tone.Cursor = Cursors.Hand;
             button_black_white.Cursor = Cursors.Hand;
             button_negative.Cursor = Cursors.Hand;
+            buttons_sepia.Cursor = Cursors.Hand;
             Changing_window();
         }
 
@@ -217,6 +237,6 @@ namespace AukcjeApp
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+       
     }
 }
