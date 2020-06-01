@@ -36,6 +36,15 @@
     <ApplicationIcon>Image.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.36, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,11 +71,11 @@
     <Compile Include="BlackWhite.Designer.cs">
       <DependentUpon>BlackWhite.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sepia.cs">
+    <Compile Include="BinaryThresHold.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Sepia.Designer.cs">
-      <DependentUpon>Sepia.cs</DependentUpon>
+    <Compile Include="BinaryThresHold.Designer.cs">
+      <DependentUpon>BinaryThresHold.cs</DependentUpon>
     </Compile>
     <Compile Include="ToneOfImage.cs">
       <SubType>UserControl</SubType>
@@ -101,8 +110,8 @@
     <EmbeddedResource Include="BlackWhite.resx">
       <DependentUpon>BlackWhite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sepia.resx">
-      <DependentUpon>Sepia.cs</DependentUpon>
+    <EmbeddedResource Include="BinaryThresHold.resx">
+      <DependentUpon>BinaryThresHold.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ToneOfImage.resx">
       <DependentUpon>ToneOfImage.cs</DependentUpon>
@@ -126,6 +135,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

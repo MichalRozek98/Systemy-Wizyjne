@@ -129,16 +129,16 @@ namespace SystemyWizyjne
             }
             else if (User_control_flag == 5)
             {
-                var Sepia_user = new Sepia();
-                if (!panel_main.Contains(Sepia_user.Instance))
+                var BinaryTrashHold_user = new BinaryThresHold();
+                if (!panel_main.Contains(BinaryTrashHold_user.Instance))
                 {
-                    panel_main.Controls.Add(Sepia_user.Instance);
-                    Sepia_user.Instance.Dock = DockStyle.Fill;
-                    Sepia_user.Instance.BringToFront();
+                    panel_main.Controls.Add(BinaryTrashHold_user.Instance);
+                    BinaryTrashHold_user.Instance.Dock = DockStyle.Fill;
+                    BinaryTrashHold_user.Instance.BringToFront();
                 }
                 else
                 {
-                    Sepia_user.Instance.BringToFront();
+                    BinaryTrashHold_user.Instance.BringToFront();
                 }
             }
         }

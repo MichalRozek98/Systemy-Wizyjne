@@ -106,13 +106,23 @@ namespace SystemyWizyjne
             color_image();
         }
 
+        private void RestoreToDefault()
+        {
+            trackBar_red.Value = 255;
+            trackBar_blue.Value = 255;
+            trackBar_green.Value = 255;
+            trackBar_image_red.Value = 255;
+            trackBar_image_green.Value = 255;
+            trackBar_image_blue.Value = 255;
+            color_background();
+            color_image();
+        }
+
         private void button_restore_Click(object sender, EventArgs e)
         {
             //pictureBox_image.Image = Image.FromFile("picture.png");
             pictureBox_image.Image = Image.FromFile(path);
-            trackBar_image_red.Value = 255;
-            trackBar_image_green.Value = 255;
-            trackBar_image_blue.Value = 255;
+            RestoreToDefault();
         }
 
         private void button_change_from_path_Click(object sender, EventArgs e)
@@ -125,8 +135,7 @@ namespace SystemyWizyjne
                 path = openFileDialog.FileName;
                 pictureBox_image.Image = Image.FromFile(path);
             }
+            RestoreToDefault();
         }
-
-        
     }
 }
