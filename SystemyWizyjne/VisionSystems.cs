@@ -237,6 +237,40 @@ namespace SystemyWizyjne
             this.WindowState = FormWindowState.Minimized;
         }
 
-       
+        private void button_main_MouseHover(object sender, EventArgs e)
+        {
+            var ToolTip = new ToolTip();
+            ToolTip.SetToolTip(this.button_main, "Back To Main Site");
+        }
+
+        private void button_tone_MouseHover(object sender, EventArgs e)
+        {
+            var ToolTip = new ToolTip();
+            ToolTip.SetToolTip(this.button_tone, "Change Tone");
+        }
+
+        private void button_black_white_MouseHover(object sender, EventArgs e)
+        {
+            var ToolTip = new ToolTip();
+            ToolTip.SetToolTip(this.button_black_white, "Change Grayscale");
+        }
+
+        private void button_mirror_MouseHover(object sender, EventArgs e)
+        {
+            var ToolTip = new ToolTip();
+            ToolTip.SetToolTip(this.button_mirror, "Make a Mirror of Picture");
+        }
+
+        private void button_negative_MouseHover(object sender, EventArgs e)
+        {
+            var ToolTip = new ToolTip();
+            ToolTip.SetToolTip(this.button_negative, "Make an Negative of Picture");
+        }
+
+        private void buttons_sepia_MouseHover(object sender, EventArgs e)
+        {
+            var ToolTip = new ToolTip();
+            ToolTip.SetToolTip(this.buttons_sepia, "Make a Sepia of Picture");
+        }
     }
 }

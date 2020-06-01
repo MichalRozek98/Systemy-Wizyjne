@@ -37,6 +37,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox_original = new System.Windows.Forms.GroupBox();
             this.pictureBox_original = new System.Windows.Forms.PictureBox();
+            this.label_title = new System.Windows.Forms.Label();
             this.panel_alibaba.SuspendLayout();
             this.groupBox_negative.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_negative)).BeginInit();
@@ -46,6 +47,7 @@
             // 
             // panel_alibaba
             // 
+            this.panel_alibaba.Controls.Add(this.label_title);
             this.panel_alibaba.Controls.Add(this.button_change_from_path);
             this.panel_alibaba.Controls.Add(this.label_negative);
             this.panel_alibaba.Controls.Add(this.label_original);
@@ -63,7 +65,7 @@
             this.button_change_from_path.FlatAppearance.BorderSize = 0;
             this.button_change_from_path.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_change_from_path.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_change_from_path.Location = new System.Drawing.Point(379, 541);
+            this.button_change_from_path.Location = new System.Drawing.Point(379, 560);
             this.button_change_from_path.Name = "button_change_from_path";
             this.button_change_from_path.Size = new System.Drawing.Size(175, 69);
             this.button_change_from_path.TabIndex = 14;
@@ -75,7 +77,7 @@
             // 
             this.label_negative.AutoSize = true;
             this.label_negative.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_negative.Location = new System.Drawing.Point(631, 491);
+            this.label_negative.Location = new System.Drawing.Point(631, 510);
             this.label_negative.Name = "label_negative";
             this.label_negative.Size = new System.Drawing.Size(141, 40);
             this.label_negative.TabIndex = 13;
@@ -85,7 +87,7 @@
             // 
             this.label_original.AutoSize = true;
             this.label_original.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_original.Location = new System.Drawing.Point(165, 491);
+            this.label_original.Location = new System.Drawing.Point(165, 510);
             this.label_original.Name = "label_original";
             this.label_original.Size = new System.Drawing.Size(134, 40);
             this.label_original.TabIndex = 12;
@@ -94,7 +96,7 @@
             // groupBox_negative
             // 
             this.groupBox_negative.Controls.Add(this.pictureBox_negative);
-            this.groupBox_negative.Location = new System.Drawing.Point(477, 33);
+            this.groupBox_negative.Location = new System.Drawing.Point(477, 52);
             this.groupBox_negative.Name = "groupBox_negative";
             this.groupBox_negative.Size = new System.Drawing.Size(440, 440);
             this.groupBox_negative.TabIndex = 11;
@@ -112,7 +114,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(572, 218);
+            this.checkBox1.Location = new System.Drawing.Point(572, 237);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(80, 17);
             this.checkBox1.TabIndex = 10;
@@ -122,7 +124,7 @@
             // groupBox_original
             // 
             this.groupBox_original.Controls.Add(this.pictureBox_original);
-            this.groupBox_original.Location = new System.Drawing.Point(14, 33);
+            this.groupBox_original.Location = new System.Drawing.Point(14, 52);
             this.groupBox_original.Name = "groupBox_original";
             this.groupBox_original.Size = new System.Drawing.Size(440, 440);
             this.groupBox_original.TabIndex = 9;
@@ -136,6 +138,16 @@
             this.pictureBox_original.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_original.TabIndex = 0;
             this.pictureBox_original.TabStop = false;
+            // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_title.Location = new System.Drawing.Point(377, 11);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(165, 27);
+            this.label_title.TabIndex = 15;
+            this.label_title.Text = "Making negative";
             // 
             // Negative
             // 
@@ -166,5 +178,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.GroupBox groupBox_original;
         private System.Windows.Forms.PictureBox pictureBox_original;
+        private System.Windows.Forms.Label label_title;
     }
 }

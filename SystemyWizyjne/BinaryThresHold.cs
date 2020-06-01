@@ -28,13 +28,22 @@ namespace SystemyWizyjne
             }
         }
 
-        public string path;
+        private string path = @"..\..\..\Images\picture.png";
 
         public BinaryThresHold()
         {
             InitializeComponent();
             button_add_picture.Cursor = Cursors.Hand;
             trackBar_binary.Cursor = Cursors.Hand;
+            pictureBox_original.Image = System.Drawing.Image.FromFile(path);
+            pictureBox_binary.Image = null;
+            trackBar_binary.Value = 10;
+
+            Bitmap bitmap = new Bitmap(pictureBox_original.Image);
+            IFilter threshold = new Threshold(trackBar_binary.Value);
+            bitmap = Grayscale.CommonAlgorithms.RMY.Apply(bitmap);
+            bitmap = threshold.Apply(bitmap);
+            pictureBox_binary.Image = bitmap;
         }
 
         private void button_add_picture_Click(object sender, EventArgs e)

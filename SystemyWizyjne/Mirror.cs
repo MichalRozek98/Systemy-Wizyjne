@@ -25,13 +25,35 @@ namespace SystemyWizyjne
             }
         }
 
-        public string path;
+        private string path = @"..\..\..\Images\picture.png";
 
         public Mirror()
         {
             InitializeComponent();
             button_add_picture.Cursor = Cursors.Hand;
             button_mirror.Cursor = Cursors.Hand;
+
+            pictureBox_original.Image = Image.FromFile(path);
+            pictureBox_mirror.Image = null;
+
+            int width = pictureBox_original.Image.Width;
+            int height = pictureBox_original.Image.Height;
+            Bitmap bitmap_original = new Bitmap(pictureBox_original.Image);
+
+            Bitmap bitmap = new Bitmap(width * 2, height);
+
+            for (int y = 0; y < height; y++)
+            {
+                for (int lx = 0, rx = width * 2 - 1; lx < width; lx++, rx--)
+                {
+                    Color p = bitmap_original.GetPixel(lx, y);
+
+                    bitmap.SetPixel(lx, y, p);
+                    bitmap.SetPixel(rx, y, p);
+                }
+            }
+
+            pictureBox_mirror.Image = bitmap;
         }
 
         private void button_add_picture_Click(object sender, EventArgs e)
@@ -49,31 +71,24 @@ namespace SystemyWizyjne
 
         private void button_mirror_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int width = pictureBox_original.Image.Width;
-                int height = pictureBox_original.Image.Height;
-                Bitmap bitmap_original = new Bitmap(pictureBox_original.Image);
+           int width = pictureBox_original.Image.Width;
+           int height = pictureBox_original.Image.Height;
+           Bitmap bitmap_original = new Bitmap(pictureBox_original.Image);
 
-                Bitmap bitmap = new Bitmap(width * 2, height);
+           Bitmap bitmap = new Bitmap(width * 2, height);
 
-                for (int y = 0; y < height; y++)
-                {
-                    for (int lx = 0, rx = width * 2 - 1; lx < width; lx++, rx--)
-                    {
-                        Color p = bitmap_original.GetPixel(lx, y);
+           for (int y = 0; y < height; y++)
+           {
+               for (int lx = 0, rx = width * 2 - 1; lx < width; lx++, rx--)
+               {
+                   Color p = bitmap_original.GetPixel(lx, y);
 
-                        bitmap.SetPixel(lx, y, p);
-                        bitmap.SetPixel(rx, y, p);
-                    }
-                }
+                   bitmap.SetPixel(lx, y, p);
+                   bitmap.SetPixel(rx, y, p);
+               }
+           }
 
-                pictureBox_mirror.Image = bitmap;
-            }
-            catch
-            {
-                MessageBox.Show("Brak oryginalnego obrazu.", "Information");
-            }
+           pictureBox_mirror.Image = bitmap;
         }
     }
 }

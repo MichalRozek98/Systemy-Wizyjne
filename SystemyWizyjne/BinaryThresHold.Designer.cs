@@ -34,7 +34,9 @@
             this.groupBox_binary = new System.Windows.Forms.GroupBox();
             this.pictureBox_binary = new System.Windows.Forms.PictureBox();
             this.trackBar_binary = new System.Windows.Forms.TrackBar();
+            this.label_title = new System.Windows.Forms.Label();
             this.label_binary = new System.Windows.Forms.Label();
+            this.label_original = new System.Windows.Forms.Label();
             this.groupBox_original.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_original)).BeginInit();
             this.groupBox_binary.SuspendLayout();
@@ -48,24 +50,23 @@
             this.button_add_picture.FlatAppearance.BorderSize = 0;
             this.button_add_picture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_add_picture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_add_picture.Location = new System.Drawing.Point(120, 453);
+            this.button_add_picture.Location = new System.Drawing.Point(119, 514);
             this.button_add_picture.Name = "button_add_picture";
             this.button_add_picture.Size = new System.Drawing.Size(175, 69);
             this.button_add_picture.TabIndex = 11;
-            this.button_add_picture.Text = "Add picture";
+            this.button_add_picture.Text = "Change Picture";
             this.button_add_picture.UseVisualStyleBackColor = false;
             this.button_add_picture.Click += new System.EventHandler(this.button_add_picture_Click);
             // 
             // groupBox_original
             // 
-            this.groupBox_original.BackColor = System.Drawing.Color.Silver;
+            this.groupBox_original.BackColor = System.Drawing.Color.Transparent;
             this.groupBox_original.Controls.Add(this.pictureBox_original);
             this.groupBox_original.Location = new System.Drawing.Point(66, 120);
             this.groupBox_original.Name = "groupBox_original";
             this.groupBox_original.Size = new System.Drawing.Size(300, 300);
             this.groupBox_original.TabIndex = 9;
             this.groupBox_original.TabStop = false;
-            this.groupBox_original.Text = "Original picture";
             // 
             // pictureBox_original
             // 
@@ -78,14 +79,13 @@
             // 
             // groupBox_binary
             // 
-            this.groupBox_binary.BackColor = System.Drawing.Color.Silver;
+            this.groupBox_binary.BackColor = System.Drawing.Color.Transparent;
             this.groupBox_binary.Controls.Add(this.pictureBox_binary);
             this.groupBox_binary.Location = new System.Drawing.Point(560, 120);
             this.groupBox_binary.Name = "groupBox_binary";
             this.groupBox_binary.Size = new System.Drawing.Size(300, 300);
             this.groupBox_binary.TabIndex = 10;
             this.groupBox_binary.TabStop = false;
-            this.groupBox_binary.Text = "Binary ThresHold Picture";
             // 
             // pictureBox_binary
             // 
@@ -98,7 +98,7 @@
             // 
             // trackBar_binary
             // 
-            this.trackBar_binary.Location = new System.Drawing.Point(560, 465);
+            this.trackBar_binary.Location = new System.Drawing.Point(560, 527);
             this.trackBar_binary.Maximum = 255;
             this.trackBar_binary.Minimum = 10;
             this.trackBar_binary.Name = "trackBar_binary";
@@ -107,21 +107,43 @@
             this.trackBar_binary.Value = 10;
             this.trackBar_binary.Scroll += new System.EventHandler(this.trackBar_binary_Scroll);
             // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label_title.Location = new System.Drawing.Point(340, 22);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(239, 27);
+            this.label_title.TabIndex = 14;
+            this.label_title.Text = "Making binary threshold";
+            // 
             // label_binary
             // 
             this.label_binary.AutoSize = true;
-            this.label_binary.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label_binary.Location = new System.Drawing.Point(340, 22);
+            this.label_binary.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_binary.Location = new System.Drawing.Point(576, 432);
             this.label_binary.Name = "label_binary";
-            this.label_binary.Size = new System.Drawing.Size(239, 27);
-            this.label_binary.TabIndex = 14;
-            this.label_binary.Text = "Making binary threshold";
+            this.label_binary.Size = new System.Drawing.Size(277, 40);
+            this.label_binary.TabIndex = 15;
+            this.label_binary.Text = "Binary ThresHold ";
+            // 
+            // label_original
+            // 
+            this.label_original.AutoSize = true;
+            this.label_original.Font = new System.Drawing.Font("Sitka Small", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_original.Location = new System.Drawing.Point(135, 432);
+            this.label_original.Name = "label_original";
+            this.label_original.Size = new System.Drawing.Size(134, 40);
+            this.label_original.TabIndex = 16;
+            this.label_original.Text = "Original";
             // 
             // BinaryThresHold
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_original);
             this.Controls.Add(this.label_binary);
+            this.Controls.Add(this.label_title);
             this.Controls.Add(this.trackBar_binary);
             this.Controls.Add(this.groupBox_binary);
             this.Controls.Add(this.button_add_picture);
@@ -146,6 +168,8 @@
         private System.Windows.Forms.GroupBox groupBox_binary;
         private System.Windows.Forms.PictureBox pictureBox_binary;
         private System.Windows.Forms.TrackBar trackBar_binary;
+        private System.Windows.Forms.Label label_title;
         private System.Windows.Forms.Label label_binary;
+        private System.Windows.Forms.Label label_original;
     }
 }

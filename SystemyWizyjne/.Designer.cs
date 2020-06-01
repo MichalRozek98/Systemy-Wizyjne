@@ -34,13 +34,13 @@
             this.button_close_app = new System.Windows.Forms.Button();
             this.pictureBox_logo_icon = new System.Windows.Forms.PictureBox();
             this.panel_menu_left = new System.Windows.Forms.Panel();
+            this.buttons_sepia = new System.Windows.Forms.Button();
             this.button_negative = new System.Windows.Forms.Button();
             this.button_mirror = new System.Windows.Forms.Button();
             this.button_black_white = new System.Windows.Forms.Button();
             this.button_tone = new System.Windows.Forms.Button();
             this.button_main = new System.Windows.Forms.Button();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.buttons_sepia = new System.Windows.Forms.Button();
             this.panel_menu_up.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_icon)).BeginInit();
             this.panel_menu_left.SuspendLayout();
@@ -113,6 +113,22 @@
             this.panel_menu_left.TabIndex = 1;
             this.panel_menu_left.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_menu_left_Paint);
             // 
+            // buttons_sepia
+            // 
+            this.buttons_sepia.BackColor = System.Drawing.Color.Transparent;
+            this.buttons_sepia.FlatAppearance.BorderSize = 0;
+            this.buttons_sepia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.buttons_sepia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttons_sepia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttons_sepia.Image = ((System.Drawing.Image)(resources.GetObject("buttons_sepia.Image")));
+            this.buttons_sepia.Location = new System.Drawing.Point(39, 556);
+            this.buttons_sepia.Name = "buttons_sepia";
+            this.buttons_sepia.Size = new System.Drawing.Size(64, 64);
+            this.buttons_sepia.TabIndex = 9;
+            this.buttons_sepia.UseVisualStyleBackColor = false;
+            this.buttons_sepia.Click += new System.EventHandler(this.buttons_sepia_Click);
+            this.buttons_sepia.MouseHover += new System.EventHandler(this.buttons_sepia_MouseHover);
+            // 
             // button_negative
             // 
             this.button_negative.BackColor = System.Drawing.Color.Transparent;
@@ -127,6 +143,7 @@
             this.button_negative.TabIndex = 8;
             this.button_negative.UseVisualStyleBackColor = false;
             this.button_negative.Click += new System.EventHandler(this.button_negative_Click);
+            this.button_negative.MouseHover += new System.EventHandler(this.button_negative_MouseHover);
             // 
             // button_mirror
             // 
@@ -142,6 +159,7 @@
             this.button_mirror.TabIndex = 7;
             this.button_mirror.UseVisualStyleBackColor = false;
             this.button_mirror.Click += new System.EventHandler(this.button_mirror_Click);
+            this.button_mirror.MouseHover += new System.EventHandler(this.button_mirror_MouseHover);
             // 
             // button_black_white
             // 
@@ -157,6 +175,7 @@
             this.button_black_white.TabIndex = 6;
             this.button_black_white.UseVisualStyleBackColor = false;
             this.button_black_white.Click += new System.EventHandler(this.button_black_white_Click);
+            this.button_black_white.MouseHover += new System.EventHandler(this.button_black_white_MouseHover);
             // 
             // button_tone
             // 
@@ -172,6 +191,7 @@
             this.button_tone.TabIndex = 5;
             this.button_tone.UseVisualStyleBackColor = false;
             this.button_tone.Click += new System.EventHandler(this.button_tone_Click);
+            this.button_tone.MouseHover += new System.EventHandler(this.button_tone_MouseHover);
             // 
             // button_main
             // 
@@ -187,6 +207,7 @@
             this.button_main.TabIndex = 4;
             this.button_main.UseVisualStyleBackColor = false;
             this.button_main.Click += new System.EventHandler(this.button_main_Click);
+            this.button_main.MouseHover += new System.EventHandler(this.button_main_MouseHover);
             // 
             // panel_main
             // 
@@ -196,22 +217,7 @@
             this.panel_main.Size = new System.Drawing.Size(930, 642);
             this.panel_main.TabIndex = 2;
             // 
-            // buttons_sepia
-            // 
-            this.buttons_sepia.BackColor = System.Drawing.Color.Transparent;
-            this.buttons_sepia.FlatAppearance.BorderSize = 0;
-            this.buttons_sepia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.buttons_sepia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttons_sepia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons_sepia.Image = ((System.Drawing.Image)(resources.GetObject("buttons_sepia.Image")));
-            this.buttons_sepia.Location = new System.Drawing.Point(39, 556);
-            this.buttons_sepia.Name = "buttons_sepia";
-            this.buttons_sepia.Size = new System.Drawing.Size(64, 64);
-            this.buttons_sepia.TabIndex = 9;
-            this.buttons_sepia.UseVisualStyleBackColor = false;
-            this.buttons_sepia.Click += new System.EventHandler(this.buttons_sepia_Click);
-            // 
-            // SystemyWizyjne
+            // VisionSystems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +228,7 @@
             this.Controls.Add(this.panel_menu_up);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "SystemyWizyjne";
+            this.Name = "VisionSystems";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Systemy Wizyjne";
             this.panel_menu_up.ResumeLayout(false);
