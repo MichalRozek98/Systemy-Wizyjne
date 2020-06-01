@@ -29,7 +29,7 @@ namespace AukcjeApp
             }
         }
 
-        private string path = "picture.png";
+        private string path = @"..\..\..\Images\picture.png";
 
         public ToneOfImage()
         {
