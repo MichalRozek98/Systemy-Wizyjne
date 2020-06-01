@@ -148,6 +148,7 @@
             this.button_black_white.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.button_black_white.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button_black_white.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_black_white.Image = ((System.Drawing.Image)(resources.GetObject("button_black_white.Image")));
             this.button_black_white.Location = new System.Drawing.Point(38, 234);
             this.button_black_white.Name = "button_black_white";
             this.button_black_white.Size = new System.Drawing.Size(64, 64);
